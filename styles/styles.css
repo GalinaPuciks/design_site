@@ -160,20 +160,6 @@ body {
     border: none; 
 }
 
-@media(max-width:768px){
-    .header-navigation, .button{
-        display: none;
-    }
-    .header_container{
-        justify-content: space-around;
-    }
-    .phone{
-        text-decoration: none;
-        color: white;
-    }
-   
-}
-
 @media(max-width:1272px) {
     .header_container {
         padding-left: 20px;
@@ -185,7 +171,16 @@ body {
     .header-navigation__item{
         margin-right: 20px;
     }  
+    .header_container{
+        display: flex;
+        justify-content: center;
+    }
+    .phone{
+        margin-right: 20px;
+    }
+
 }
+
 
 @media(max-width:920px){
     .header-navigation{
@@ -195,6 +190,26 @@ body {
         padding: 10px 20px;
     }
 }
+
+
+@media(max-width:768px){
+    .header-navigation, .button{
+        display: none;
+    }
+
+    .phone{
+        text-decoration: none;
+        color: white;
+        padding-right: 18px;
+    }
+    .header_container {
+        display: flex;
+        justify-content: space-between;
+}
+
+
+
+
 
 @media(max-width:578px){
     .title{
