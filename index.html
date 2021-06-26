@@ -123,13 +123,21 @@
                     <div class="player_overlay"></div>
                     <img class="play_sign" src="./images/svg/play.svg" alt="">
                 </div>
-                <img class="line_player"></img>
-                <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
-                <form action="">
-                    <div>
-                        <input type="text">
-                        <input type="text">
-                        <button></button>
+                <img class="line_player" src="./images/svg/playerLine.svg"></img>
+                <p class="playerText">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
+                <form class="form" action="">
+                    <div class="input_items">
+                        <label class="label">
+                            <div class="label_descr">Name</div>
+                            <input class="input" type="text" placeholder="What is your name:">
+                        </label>
+                        
+                        <label class="label">
+                            <div class="label_descr">Phone</div>
+                            <input class="input" type="text" placeholder="Your phone number:">
+                        </label>
+                        
+                        <button class="button submit_button" type="submit">Submit</button>
                     </div>
                     <div class="first-checkbox">
                         <label class="label">
@@ -139,14 +147,95 @@
                         </label>
                       </div>
                 </form>
+
+                <h1 class="repairTitle">Types of repair</h1>
+                <img src="./images/svg/line.svg" alt="">
+                <img src="./images/svg/tools.svg" alt="">
+                <img src="./images/svg/line.svg" alt="">
+
+                <ul class="types">
+                    <li class="types_item">
+                        <div>
+                            <img class="type_item-image" src="./images/redecorating.jpg" alt="">
+                            <div class="redecorating_descr">
+                                <h1 class="redecorating_title">Redecorating</h1>
+                                <ul class="redecorating_descr-list" >
+                                    <li class="redecorating_descr-list-item">Dismantling of old coatings</li>
+                                    <li class="redecorating_descr-list-item">Wallpapering</li>
+                                    <li class="redecorating_descr-list-item">Painting walls and ceilings</li>
+                                    <li class="redecorating_descr-list-item">Laying flooring </li>
+                                    <li class="redecorating_descr-list-item">Replacing sockets and switches</li>
+                                    <li class="redecorating_descr-list-item">Replacing plumbing</li>
+                                    <li class="redecorating_descr-list-item">Replacing doors</li>
+                                </ul>
+                            </div>
+                            <h1 class="price_label">from 900 rub / m2</h1>
+                        </div>
+                    </li>
+
+                    <li class="types_item">
+                        <div>
+                            <img class="type_item-image" src="./images/overhaul.jpg" alt="">
+                            <div class="redecorating_descr">
+                                <h1 class="redecorating_title">Overhaul</h1>
+                                <ul class="redecorating_descr-list" >
+                                    <li class="redecorating_descr-list-item">Dismantling of old coatings</li>
+                                    <li class="redecorating_descr-list-item">Wallpapering</li>
+                                    <li class="redecorating_descr-list-item">Painting walls and ceilings</li>
+                                    <li class="redecorating_descr-list-item">Laying flooring </li>
+                                    <li class="redecorating_descr-list-item">Replacing sockets and switches</li>
+                                    <li class="redecorating_descr-list-item">Replacing plumbing</li>
+                                    <li class="redecorating_descr-list-item">Replacing doors</li>
+                                </ul>
+                            </div>
+                            <h1 class="price_label">from 1800 rub / m2</h1>
+                        </div>
+                    </li>
+
+                    <li class="types_item">
+                        <div>
+                            <img class="type_item-image" src="./images/desiner_repair.jpg" alt="">
+                            <div class="redecorating_descr">
+                                <h1 class="redecorating_title">Designer repair</h1>
+                                <ul class="redecorating_descr-list" >
+                                    <li class="redecorating_descr-list-item">Dismantling of old coatings</li>
+                                    <li class="redecorating_descr-list-item">Wallpapering</li>
+                                    <li class="redecorating_descr-list-item">Painting walls and ceilings</li>
+                                    <li class="redecorating_descr-list-item">Laying flooring </li>
+                                    <li class="redecorating_descr-list-item">Replacing sockets and switches</li>
+                                    <li class="redecorating_descr-list-item">Replacing plumbing</li>
+                                    <li class="redecorating_descr-list-item">Replacing doors</li>
+                                </ul>
+                            </div>
+                            <h1 class="price_label">from 4000 rub / m2</h1>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </section>
 
     </main>
-
-    <footer>
-
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="logo">
+                IC "Repair Design Project"
+            </div>
+            <nav>
+                <ul class="footer-navigation">
+                    <li class="footer-navigation__item"><a href="#">HOME</a></li>
+                    <li class="footer-navigation__item"><a href="#">PROJECTS</a></li>
+                    <li class="footer-navigation__item"><a href="#">MEASURMENT</a></li>
+                    <li class="footer-navigation__item"><a href="#">TEAM</a></li>
+                    <li class="footer-navigation__item"><a href="#">REVIEWS</a></li>
+                    <li class="footer-navigation__item"><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <a class="phone" href="#">+7 (928) 768-32-39</a>
+            <button class="button">Request a call</button>
+        </div> 
     </footer>
+       
     
 </body>
 </html>
