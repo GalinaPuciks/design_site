@@ -376,12 +376,14 @@ color: #363636;
 .form{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .input_items{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 39px;
 }
 
 .input{
@@ -412,6 +414,30 @@ color: #363636;
     height: 421px;
     width: 392px;
 }
+
+.label {
+    cursor: pointer;
+  }
+  .checkbox{
+    display: none;
+  }
+  .fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+  .fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+  }
+  .checkbox:checked + .fake::before{
+    opacity: 1;
+  }
 
 .redecorating_title {
     font-family: Yeseva One;
@@ -455,6 +481,7 @@ color: #363636;
     margin-top: -27px;
     position: relative;
     justify-content: center;
+    margin-bottom: 124px;
     
 }
 
@@ -462,6 +489,131 @@ color: #363636;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.measurment{
+    height: 1328px;
+    background: url("../images/measurment.png") no-repeat;
+}
+
+.details-item__number{
+    width: 41px;
+    height: 41px;
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 21px;
+
+color: #FFFFFF;
+}
+
+.details-item__descr{
+    width: 316px;
+    height: 39px;
+    font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #363636;
+}
+
+.mesurment_details-item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 114px;
+}
+
+.inputs_items-measurment{
+    display: flex;
+    flex-direction: column;
+}
+
+.measurment_main{
+    display: flex;
+    flex-direction: row;
+}
+
+.measurment_request{
+    width: 506px;
+    height: 509px;
+    background: #131313;
+box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.label_descr-measurment{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input_measurment{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #131313;
+    width: 408px;
+    margin-bottom: 49px;
+   
+}
+
+.input_measurment:last-child{
+    margin-bottom: 17px;
+}
+
+.input_measurment::-webkit-input-placeholder{
+    color: white;
+}
+
+.measurment_form-title{
+    font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+
+color: #FFFFFF;
+margin-bottom: 39px;
+}
+
+.measurment_form{
+    padding-left: 49px;
+}
+
+.submit_button-block{
+    display: flex;
+justify-content: flex-end;
+padding-right: 49px; }
+
+.measurment-text{
+    color: white;
+}
+
+.checkbox_measurment{
+    margin-bottom: 39px;
+}
+
+.measurment_main{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.mesurment_details-items{
+    padding-right: 210px;
+    padding-left: 190px;
 }
 @media(max-width:1272px) {
     .header_container {
