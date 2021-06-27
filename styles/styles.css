@@ -15,6 +15,7 @@ ul{
     list-style: none;
 }
 
+
 .container {
     max-width: 1256px;
     margin: 0 auto;
@@ -531,24 +532,32 @@ color: #363636;
 .mesurment_details-item{
     display: flex;
     flex-direction: row;
-    margin-bottom: 114px;
+    margin-bottom: 90px;
+}
+
+.measurment_details_item:last-child{
+    margin-bottom:0;
 }
 
 .inputs_items-measurment{
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
 }
 
 .measurment_main{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
 }
 
 .measurment_request{
     width: 506px;
     height: 509px;
     background: #131313;
-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 38px;
 }
 
 .label_descr-measurment{
@@ -564,12 +573,15 @@ box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
     color: #FFFFFF;
     background: #131313;
     width: 408px;
-    margin-bottom: 49px;
-   
+    //margin-bottom: 49px;
 }
 
-.input_measurment:last-child{
-    margin-bottom: 17px;
+.label_measurment{
+    margin-bottom: 49px;
+}
+
+.label_measurment:last-child{
+   margin-bottom: 17px;
 }
 
 .input_measurment::-webkit-input-placeholder{
@@ -583,6 +595,8 @@ font-weight: normal;
 font-size: 18px;
 line-height: 26px;
 text-align: center;
+padding-top: 20px;
+
 
 color: #FFFFFF;
 margin-bottom: 39px;
@@ -612,9 +626,112 @@ padding-right: 49px; }
 }
 
 .mesurment_details-items{
-    padding-right: 210px;
     padding-left: 190px;
 }
+
+.emblem_image{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #E3B873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    position: relative;
+    margin-right: 25px;
+}
+
+.emblem_image::before{
+    content: url(../images/svg/pig.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emblem_block{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.styles_types{
+    height: 864px;
+    background:  url("../images/styles.png") center center/cover no-repeat;
+    position: relative;
+    margin-bottom: 110px;
+}
+
+.styles_types-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.styles_block-title{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.styles_block-item{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.styles_block-item:hover{
+  text-decoration: underline;
+  color: #E3B873;
+    
+}
+
+.styles_block{
+    padding-top: 138px;
+    width: 299px;
+}
+
+.styles_block-view{
+    justify-content: space-between;
+}
+
+.styles_block-list{
+    padding-inline-start: 0px;
+}
+
+.styles_block-view, .styles_images{
+    display: flex;
+    flex-direction: row;
+}
+.styles_images-left, .styles_images-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.clock_image{
+    margin-top: -41px;
+    margin-bottom: 40px;
+}
+
+.sofa_image{
+    margin-top: -112px;
+    margin-bottom: 40px;
+}
+
+.styles_images-left{
+    margin-right: 40px;
+}
+
+
 @media(max-width:1272px) {
     .header_container {
         padding-left: 20px;
