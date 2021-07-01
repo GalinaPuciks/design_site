@@ -22,11 +22,11 @@
             <nav>
                 <ul class="header-navigation">
                     <li class="header-navigation__item"><a href="#">HOME</a></li>
-                    <li class="header-navigation__item"><a href="#">PROJECTS</a></li>
-                    <li class="header-navigation__item"><a href="#">MEASURMENT</a></li>
+                    <li class="header-navigation__item"><a href="#slider_section">PROJECTS</a></li>
+                    <li class="header-navigation__item"><a href="#measurment">MEASURMENT</a></li>
                     <li class="header-navigation__item"><a href="#">TEAM</a></li>
-                    <li class="header-navigation__item"><a href="#">REVIEWS</a></li>
-                    <li class="header-navigation__item"><a href="#">CONTACTS</a></li>
+                    <li class="header-navigation__item"><a href="#clients">REVIEWS</a></li>
+                    <li class="header-navigation__item"><a href="#coordinates">CONTACTS</a></li>
                 </ul>
             </nav>
             <a class="phone" href="#">+7 (928) 768-32-39</a>
@@ -59,7 +59,7 @@
             </div>
         </section>
 
-        <section class="slider_section">
+        <section class="slider_section" id="slider_section">
             <div class="container slider_container">
                 <div class="slider_main">
                     <div class="slider_left">
@@ -82,7 +82,7 @@
                             
                             </div>
                             <div class="slider_navigation">
-                                <img src="./images/svg/leftArrow.svg" alt="">
+                                <img src="./images/svg/leftArrow.svg"  alt="">
                                 <ul class="dots">
                                     <li class="dot_item dot-active"></li>
                                     <li class="dot_item"></li>
@@ -99,7 +99,25 @@
                                 <h1 class="project_title-item">Sochi Thieves</h1>
                                 <h1 class="project_title-item">Rostov-on-Don Patriotic</h1>
                             </div>
-                            <img src="./images/slider.png" alt="">
+                            <img src="./images/slider.png" class="slider_image" alt="">
+                            <div class="mobile_arrow-left"></div>
+                            <div class="mobile_arrow-right"></div>
+                        </div>
+
+                        <div class="slider_details double">
+                            <div class="slider_details-left">
+                                <h1 class="city">City:</h1>
+                                <p class="city_name">Rostov-on-Don LCD admiral</p>
+                                <h1 class="time">Repair time:</h1>
+                                <p class="time_details">3.5 months</p>
+                            </div>
+                            <div class="slider_details-right">
+                                <h1 class="area">Apartment Area:</h1>
+                                <p class="area_details">81m2</p>
+                                <h1 class="price">repair cost</h1>
+                                <p class="price_details">repair cost</p>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -218,7 +236,7 @@
             </div>
         </section>
 
-        <section class="measurment">
+        <section class="measurment" id="measurment">
             <div class="container">
                 <div class="measurment_main">
                     <div class="measurment_details">
@@ -328,7 +346,7 @@
                 </div>
             </div>
         </section>
-        <section class="clients">
+        <section class="clients" id="clients">
             <div class="clients_overlay">
                 <div class="container">
                     <h1 class="clients_title">our clients</h1>
@@ -403,13 +421,15 @@
                
             
         </section>
-        <section class="coordinates">
+        <section class="coordinates" id="coordinates">
             <div class="coordinates_overlay">
                 <div class="container">
+
                     <div class="question_form-block">
                         <h1 class="question_form-title">have any questions?</h1>
-                        <form class="question_form" action="">
-                            <div class="input_question_form">
+                        <form class="form question_form-content" action="">
+                            <div class="question_form-labels">
+
                                 <label class="question_label">
                                     <div class="question_label-descr">Name</div>
                                     <input class="input question_label-input" type="text" placeholder="What is your name:">
@@ -420,13 +440,14 @@
                                     <input class="input question_label-input" type="text" placeholder="What is your name:">
                                 </label>
                             </div>
+
                             <label class="main_question-descr">
-                                <div class="question_label-name">Question</div>
+                                <div class="question_label-title">Question</div>
                                 <input class="input question_label-main" type="text" placeholder="What is your name:">
                             </label>
                                 
                             
-                            <div class="first-checkbox checkbox_measurment">
+                            <div class="first-checkbox checkbox_measurment question">
                                 <label class="label">
                                   <input type="checkbox" class="checkbox" >
                                   <span class="fake"></span>

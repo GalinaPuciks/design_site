@@ -23,9 +23,9 @@ ul{
 
 .header, .footer {
     background-color: #131313;
-    
-  
 }
+
+
 
 
 .header_container, .footer_container{
@@ -179,6 +179,13 @@ ul{
     font-family: Yeseva One;
     font-size: 27px;
     color: #E3B873;
+    font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+line-height: 138.6%;
+text-align: center;
+letter-spacing: -0.07em;
+text-transform: uppercase;
     margin: 0;
     padding-top: 176px;
 }
@@ -937,70 +944,66 @@ line-height: 28px;
 text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
+padding-top: 34px;
+}
+
+.question_form-labels{
+    display: flex;
+    flex-direction: row;
+}
+
+.question_label{
+    margin-right: 58px;
+}
+
+.question_label:last-child{
+    margin-right: 0;
+}
+
+.question_label-main{
+    width: 525px;
 }
 
 .question_form-block{
     width: 883px;
     height: 445px;
-    background: black;
+    background: #131313;
     margin-left: auto;
     margin-right: auto;
     margin-top: -222px;
     margin-bottom: 52px;
 }
 
-.input_question_form{
-    display: flex;
-    flex-direction: row;
-}
-.question_form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.question_label{
-    margin-right: 58px;
-    background: black;
-
-}
-
-.question_label-input{
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-    color: #FFFFFF;
-    background: black;
-    width: 408px;
-}
-.question_label:last-child{
-    margin-right: 0;
-}
-
-.question_label-main{
-    width: 520px;
-    background: black;
+.question_label-input, .question_label-main{
+    background: #131313;
     font-family: Nunito Sans;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 23px;
-
-color: #FFFFFF;
 }
-.question_label, .question_label-main, .question_label-name{
+
+.question_label-input::-webkit-input-placeholder{
+    color: white;
+}
+
+.question_label-main::-webkit-input-placeholder{
+    color: white;
+}
+
+.question_label-descr, .question_label-title{
     font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 21px;
-    
-    color: rgba(255, 255, 255, 0.5);
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 21px;
 
+color: rgba(255, 255, 255, 0.5);
 }
 
+.main_question-descr, .question{
+    margin-bottom: 50px;
+}
 .contacts{
     font-family: Yeseva One;
 font-style: normal;
@@ -1045,11 +1048,54 @@ color: #E3B873;
     margin-right: auto;
     margin-left: auto;
 }
+
+.double{
+    display: none;
+}
+
+.mobile_arrow-right, .mobile_arrow-left{
+    display: none;
+}
+
+.slider_image{
+    width: 100%;
+}
+
+
+
+
 @media(max-width:1272px) {
     .header_container {
         padding-left: 20px;
         padding-right: 20px;
     }
+  .slider-_title{
+      font-size: 20px;
+  }
+  .slider_text{
+      width: 250px;
+  }
+  .city, .time, .area, .price{
+      font-size: 15px;
+  }
+  .slider_left{
+    padding-left: 15px;
+    margin-right: 15px;
+  }
+  .slider_right{
+      margin-right: 15px;
+  }
+  .player{
+    margin-top: 0px;
+    width: auto;
+}
+    .slider_section{
+        height: fit-content;
+    }
+    .slider_footer{
+        padding-bottom: 40px;
+    }
+ 
 }
 @media(max-width:1080px){
     .header-navigation__item{
@@ -1062,6 +1108,63 @@ color: #E3B873;
     .phone{
         margin-right: 20px;
     }
+    .slider_main{
+        display: flex;
+        flex-direction: column;
+    }
+    .slider_title{
+        padding-top: 36px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .slider_text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 311px;
+    }
+    .slider_navigation{
+        display: none;
+    }
+    .slider_details, .project_title{
+        display: none;
+    }
+   
+    .double{
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    .slider_visual{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile_arrow-left, .mobile_arrow-right{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #E3B873;
+        position: absolute;
+        display: block;
+    }
+    
+    .mobile_arrow-left {
+        background-image: url("../images/mobile_arrow-l.png");
+        left: 15%;
+        bottom: 50%;
+    }
+    
+    .mobile_arrow-right{
+        background-image: url("../images/mobile_arrow-r.png");
+        right: 15%;
+        bottom: 50%;
+    }
+    
+    .slider_visual{
+        position: relative;
+        margin-left: 15px;
+    }
+
 
 }
 
@@ -1089,6 +1192,7 @@ color: #E3B873;
         display: flex;
         justify-content: space-between;
          }
+ 
 }
 
 
