@@ -1077,6 +1077,15 @@ color: #E3B873;
     display: none;
 }
 
+.mobile_version-contacts{
+    display: none;
+}
+
+.mobile_version{
+    background: #131313;
+}
+
+
 @media(max-width:1272px) {
     .header_container {
         padding-left: 20px;
@@ -1097,6 +1106,7 @@ color: #E3B873;
   }
   .slider_right{
       margin-right: 15px;
+      width: 100%;
   }
   .player{
     margin-top: 0px;
@@ -1107,6 +1117,15 @@ color: #E3B873;
     }
     .slider_footer{
         padding-bottom: 40px;
+    }
+    .styles_block-view{
+        display: none;
+    }
+    .clients_list{
+        flex-wrap: wrap;
+    }
+    .map_block{
+        width: 100%;
     }
  
 }
@@ -1177,6 +1196,7 @@ color: #E3B873;
         position: relative;
         margin-left: 15px;
     }
+ 
 
 
 }
@@ -1187,6 +1207,12 @@ color: #E3B873;
     }
     .button{
         padding: 10px 20px;
+    }
+    .types {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -1234,6 +1260,7 @@ color: rgba(255, 255, 255, 0.5);
     }
     .label {
         margin-bottom: 63px;
+        margin-right: 0;
     }
     .text{
         color: white;
@@ -1256,9 +1283,7 @@ color: rgba(255, 255, 255, 0.5);
     .measurment{
         display: none;
     }
-    .styles_block-view{
-        display: none;
-    }
+   
     .styles_types-overlay{
         background: #131313;
     }
@@ -1293,8 +1318,22 @@ color: rgba(255, 255, 255, 0.5);
     .question_form-title{
         margin-top: 0;
     }
-
+    .map_block img{
+        width: auto;
+    }
+    //.styles_types-overlay{
+      //  display: none;
+    //}
  
+    .footer{
+        display: none;
+    }
+    .mobile_version{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+
 }
 
 
@@ -1333,6 +1372,17 @@ color: rgba(255, 255, 255, 0.5);
     }
     .hero{
         height: 476px;
+    }
+
+    .playerText{
+        font-size: 11px;
+        padding-left: 10px;
+        line-height: 18,68px;
+    }
+
+    .question_label{
+        margin-right: 0;
+        margin-bottom: 60px;
     }
 }
 
