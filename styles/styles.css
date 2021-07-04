@@ -820,7 +820,7 @@ text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 .clients_list{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -1105,7 +1105,7 @@ color: #E3B873;
     margin-right: auto; 
 }
 
-@media(max-width:1361) {
+@media(max-width:1361px) {
     .styles_block-view{
         display: flex;
         flex-direction: row;
