@@ -1304,6 +1304,8 @@ color: rgba(255, 255, 255, 0.5);
         width: 340px;
         height: 51px;
         margin-bottom: -25px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .first-checkbox{
         margin-bottom: 62px;
@@ -1363,6 +1365,15 @@ color: rgba(255, 255, 255, 0.5);
         display: flex;
         flex-direction: column-reverse;
     }
+    .mobile_submit-button{
+        display: block;
+        margin-top: -50px;
+        width: -webkit-fill-available;
+    }
+    .question_label{
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
     
 
 }
@@ -1411,10 +1422,7 @@ color: rgba(255, 255, 255, 0.5);
         line-height: 18,68px;
     }
 
-    .question_label{
-        margin-right: 0;
-        margin-bottom: 60px;
-    }
+
 }
 
 
