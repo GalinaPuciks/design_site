@@ -387,7 +387,7 @@ color: #363636;
 .form{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
     margin-bottom: 147px;
 }
 
@@ -522,7 +522,7 @@ color: #181818;
 .types{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -642,8 +642,10 @@ margin-bottom: 39px;
 
 .submit_button-block{
     display: flex;
-justify-content: flex-end;
-padding-right: 49px; }
+//justify-content: flex-end;
+//padding-right: 49px;
+    justify-content: center;
+}
 
 .measurment-text{
     color: white;
@@ -755,7 +757,11 @@ text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
     padding-inline-start: 0px;
 }
 
-.styles_block-view, .styles_images{
+.styles_block-view{
+    display: flex;
+    flex-direction: row;
+}
+.styles_images{
     display: flex;
     flex-direction: row;
 }
@@ -813,7 +819,9 @@ text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 
 .clients_list{
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .clients_title{
@@ -973,6 +981,9 @@ padding-top: 34px;
     margin-right: auto;
     margin-top: -222px;
     margin-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .question_label-input, .question_label-main{
@@ -1002,6 +1013,10 @@ line-height: 21px;
 color: rgba(255, 255, 255, 0.5);
 }
 
+.question{
+    margin-left: auto;
+    margin-right: auto;
+}
 .main_question-descr, .question{
     margin-bottom: 50px;
 }
@@ -1085,6 +1100,18 @@ color: #E3B873;
     background: #131313;
 }
 
+.checkbox_control{
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+@media(max-width:1361) {
+    .styles_block-view{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
 
 @media(max-width:1272px) {
     .header_container {
@@ -1118,11 +1145,13 @@ color: #E3B873;
     .slider_footer{
         padding-bottom: 40px;
     }
-    .styles_block-view{
-        display: none;
-    }
+  
     .clients_list{
         flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
     }
     .map_block{
         width: 100%;
@@ -1195,6 +1224,10 @@ color: #E3B873;
     .slider_visual{
         position: relative;
         margin-left: 15px;
+    }
+
+    .styles_block-view{
+        display: none;
     }
  
 
@@ -1321,9 +1354,7 @@ color: rgba(255, 255, 255, 0.5);
     .map_block img{
         width: auto;
     }
-    //.styles_types-overlay{
-      //  display: none;
-    //}
+    
  
     .footer{
         display: none;
