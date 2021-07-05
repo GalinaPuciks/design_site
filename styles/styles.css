@@ -478,6 +478,8 @@ color: #181818;
     margin-right: auto;
     margin-left: auto;
     width: 130px;
+    display: flex;
+    
 }
 
 .tools_img{
