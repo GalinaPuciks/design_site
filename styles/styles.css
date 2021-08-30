@@ -213,6 +213,7 @@ text-transform: uppercase;
     font-size: 14px;
     line-height: 27px;
     color: #FFFFFF;
+    width: 442px;
 }
 
 .city, .time, .area, .price {
@@ -301,7 +302,7 @@ text-transform: uppercase;
     margin-right: 0;
 }
 .dot-active{
-    color: white; 
+    background: white; 
     margin-right: 17px;
 }
 
